@@ -1,5 +1,10 @@
 function listAllValues(obj) {
   // your code here
+  let list = [];
+  for (let e in obj)
+    list.push(obj[e])
+
+  return list;
   
 }
 

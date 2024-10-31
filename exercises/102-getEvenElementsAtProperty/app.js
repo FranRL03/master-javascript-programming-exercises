@@ -1,5 +1,9 @@
 function getEvenElementsAtProperty(obj, key) {
     // your code here
+    if (!Array.isArray(obj[key]))
+      return [];
+
+    return obj[key].filter(num => num % 2 == 0);
     
 }
 

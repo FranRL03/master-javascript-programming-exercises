@@ -1,6 +1,11 @@
 function joinArrayOfArrays(arr) {
   // your code here
-  
+  let aux = [];
+
+  for(let e in arr)
+    aux = aux.concat(arr[e]);
+
+  return aux;
 }
 
 let output = joinArrayOfArrays([
